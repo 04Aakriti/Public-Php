@@ -1,1 +1,67 @@
-
+os: linux
+jobs:
+  include:
+    - dist: jammy
+      virt: vm
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+      - php hello_world.php 
+    - dist: jammy
+      virt: lxd
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+      - php hello_world.php 
+    - dist: bionic
+      virt: vm
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+       - php hello_world.php 
+    - dist: bionic
+      virt: lxd
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+         - php hello_world.php 
+    - dist: xenial
+      virt: vm
+     language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+        - php hello_world.php 
+    - dist: xenial
+      virt: lxd
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+        - php hello_world.php 
+    - dist: focal
+      virt: vm
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+        - php hello_world.php 
+    - dist: focal
+      virt: lxd
+      language: php
+      php:
+      - 7.1.9
+      arch: amd64
+      script:
+        - php hello_world.php 
