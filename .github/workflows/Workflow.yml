@@ -17,7 +17,7 @@ on:
         default: ""
       ISSUE_KEY:
         description: 'AAK-7'
-        required: false
+        required: True
         default: ""
       TESTS_KEY:
         description: 'Test Plan issue key'
